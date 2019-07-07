@@ -209,7 +209,6 @@ def fill_prob_top_k(symbol_index, num_of_states, Prob_A, Prob_B, k):
             L = sorted(L, key=itemgetter("prob"), reverse=True)
             if len(L) > k: L = L[:k]
             V[i][j] = L
-
     return V[-1]
 
 # Question 3 + Bonus
